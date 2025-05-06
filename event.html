@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    
+    <link rel ="stylesheet" href="style.css">
     <head>
         <title>Events</title>
        <link rel ="icon" href="img/date.png">
     </head>
-    <body bgcolor="black" style="color:white;">
+    <body bgcolor="grey" style="color:white;">
         <center>
-        <h1>Upcoming Events 📅 </h1>
+        <h1>Upcoming Events </h1>
         <p>Don't miss any of your important events,Stay Update</p>
         </center>
         <hr>
@@ -34,10 +34,38 @@
                 Events bring people together to celebrate, learn, or connect. Whether it's a corporate meeting, cultural festival, or casual gathering, events create memorable experiences. They involve planning, promotion, and execution to ensure success. From decorations to guest engagement, every detail counts in making events enjoyable and impactful for participants and organizers alike.
             </p>
              <hr>
+             <h1>Event Registration</h1>
+
+    <form id="registrationForm">
+        
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+            <option value="">--Select Event--</option>
+            <option value="event1">Fashion Show</option>
+            <option value="event2">Self grooming</option>
+            <option value="event3">Dance</option>
+        </select><br>
+
+        <button type="submit" style="margin-left: 30%;">Register</button> 
+        
+    </form>
+
+    <div id="confirmationMessage" style="display:none;">
+        <h3>Thank you for registering! You will receive a confirmation email shortly.</h3>
+    </div>
              <h1>Contact</h1>
              <h2>+1 8017925285 |eventCollob@gmail.com</h2>
              <p>11894 street avenue,Utah-84096</p>
         </center>
-        
+        <script src="script.js"></script>
+
+
     </body>
 </html>
